@@ -10167,10 +10167,9 @@ header.header--sticky.sticky .nav-area ul li.main-nav {
   gap: 29px;
 }
 @media only screen and (max-width: 479px) {
-  .consultancy-style-one .signle-consultancy {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  .consultancy-style-one .signle-consultancy { flex-direction: column; align-items: center; max-width: 100% !important; }
+  .information{text-align: center;}
+  .button-wrapper { display: flex; align-items: center; gap: 25px; flex-wrap: wrap; justify-content: space-evenly; }
 }
 .consultancy-style-one .signle-consultancy .icon {
   display: flex;
@@ -10189,7 +10188,6 @@ header.header--sticky.sticky .nav-area ul li.main-nav {
 .left-thumbnail-about-area-two {
   display: flex;
   justify-content: center;
-  max-width: 490px;
   margin: auto;
   position: relative;
 }
@@ -10297,7 +10295,6 @@ header.header--sticky.sticky .nav-area ul li.main-nav {
   justify-content: flex-end;
   position: relative;
   z-index: 5;
-  max-width: 440px;
   margin-left: auto;
 }
 @media only screen and (max-width: 767px) {
@@ -14160,7 +14157,7 @@ section.main-wrapper-sticky .sticky-statement.narrow .left-side img {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 92px 50px 50px 50px;
+  padding: 37px 50px 50px 50px;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -15395,6 +15392,10 @@ section.main-wrapper-sticky .sticky-statement.narrow .left-side img {
 
 .mb--310 {
   margin-bottom: 310px;
+}
+
+.mb--410 {
+  margin-bottom: 410px;
 }
 
 .mt-dec-footer-map .map-area-main-wrapper {
@@ -31073,4 +31074,5 @@ header.header-transparent.in-full-screen .action-area .menu-btn {
   .logo-img{max-width: 150px;}
 }
 
+.number-icon{font-size: 20px; font-weight: 600; color: #2e398d;}
 /*# sourceMappingURL=../maps/style.css.map */
