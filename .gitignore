@@ -1,0 +1,37 @@
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# IDE / Editör dosyaları
+.vscode/
+.idea/
+
+# Node.js bağımlılık klasörü
+node_modules/
+
+# Derleme / paketleme klasörleri
+dist/
+build/
+.cache/
+.next/
+out/
+tmp/
+temp/
+
+# Log dosyaları
+*.log
+
+# Çıktı / geçici dosyalar
+*.tmp
+*.bak
+*.swp
+
+# Çevresel değişken dosyaları (gizli bilgiler)
+.env
+.env.local
+.env.*.local
+
+# Paket kilit dosyaları (bazı projelerde opsiyonel)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
