@@ -31075,4 +31075,26 @@ header.header-transparent.in-full-screen .action-area .menu-btn {
 }
 
 .number-icon{font-size: 20px; font-weight: 600; color: #2e398d;}
+ul.disc {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul.disc li {
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 10px;
+}
+
+ul.disc li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    background-color: #5d666f;
+    border-radius: 50%;
+}
+
 /*# sourceMappingURL=../maps/style.css.map */
