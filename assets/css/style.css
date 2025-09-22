@@ -7871,11 +7871,14 @@ header.header--sticky.sticky .nav-area ul li.main-nav {
 }
 
 .rts-banner-area-two {
-  background-image: url(../images/banner/02.webp);
+  background-image: url(../images/banner/02.jpg);
   height: 850px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(20, 20, 20, 0.6)),
+    url(../images/banner/02.jpg);
 }
 @media only screen and (max-width: 575px) {
   .rts-banner-area-two {
@@ -14618,11 +14621,14 @@ section.main-wrapper-sticky .sticky-statement.narrow .left-side img {
 }
 
 .rts-call-to-action-area-two {
-  background-image: url(../images/cta/02.webp);
+  background-image: url(../images/cta/02.png);
   height: 280px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(20, 20, 20, 0.6)),
+    url(../images/banner/02.jpg);
 }
 @media only screen and (max-width: 767px) {
   .rts-call-to-action-area-two {
@@ -17789,7 +17795,7 @@ section.main-wrapper-sticky .sticky-statement.narrow .left-side img {
 }
 .client-wrapper-one a img {
   transition: var(--transition);
-  max-width: 130px;
+  max-width: 170px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .client-wrapper-one a img {
