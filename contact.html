@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Invena – A modern and responsive HTML template for consulting businesses. Perfect for finance, corporate, and agency websites. SEO-friendly, fast-loading, and easy to customize. Create a professional online presence today!">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo/Favicon.png">
     <title>Marmara Gıda</title>
     <link rel="stylesheet preload" href="assets/css/plugins/fontawesome.css" as="style">
     <link rel="stylesheet preload" href="assets/css/plugins/swiper.css" as="style">
@@ -27,7 +27,7 @@
 
 <body class="contact-page">
     
-        <header class="header-one header--sticky">
+    <header class="header-one header--sticky">
         <div class="header-main">
             <div class="container">
                 <div class="row">
@@ -38,7 +38,7 @@
                                     <img class="logo-img" src="assets/images/logo/marmara-logo.png" alt="finbiz-logo">
                                 </a>
                             </div>
-                            <div class="main-header">                                
+                            <div class="main-header">
                                 <div class="nav-area">
                                     <ul>
                                         <li class="main-nav mega-menu project-a-after">
@@ -48,17 +48,10 @@
                                         <li class="main-nav mega-menu">
                                             <a href="hakkimizda.html">Hakkımızda</a>
                                         </li>
-                                        
-                                        <li class="main-nav has-dropdown project-a-after">
-                                            <a href="#service">Hizmetlerimiz</a>
-                                            <ul class="submenu parent-nav">
-                                                <li><a href="kurumsal-catering.html">Kurumsal Catering</a></li>
-                                                <li><a href="ozel-davetler.html">Özel Davetler</a></li>
-                                                <li><a href="dugun-catering.html">Düğün Catering</a></li>
-                                                <li><a href="coffee-break.html">Coffee Break</a></li>
-                                                <li><a href="okul-catering.html">Okul Catering</a></li>
-                                            </ul>
+                                        <li class="main-nav mega-menu">
+                                            <a href="index.html#service">Hizmetlerimiz</a>
                                         </li>
+
                                         <li class="main-nav project-a-after">
                                             <a href="index.html#blog">Blog</a>
                                         </li>
@@ -67,7 +60,8 @@
                                 </div>
                                 <div class="button-area">
                                     <a href="contact.html"
-                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Teklif Al</a>
+                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Get
+                                        Quote</a>
                                     <button id="menu-btn" class="menu-btn menu ml--20 ml_sm--10">
                                         <img class="menu-light" src="assets/images/icons/01.svg" alt="Menu-icon">
                                     </button>
@@ -112,7 +106,7 @@
                                 <i class="fa-solid fa-phone-flip"></i>
                             </div>
                             <div class="info-wrapper">
-                                <span>Bizi 24/7 Arayın</span>
+                                <span>Bizi Arayın</span>
                                 <a href="#">(0212) 549 50 74</a>
                             </div>
                             </div>
@@ -138,21 +132,39 @@
                             </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="thumbnail-contact-form">
-                        <img src="assets/images/contact/01.webp" alt="contact">
-                    </div>
-                </div>
-                <div class="col-lg-3">
+                <div class="col-lg-8">
                     <div class="contact-form-p">
                         <form class="form__content" method="post" action="mailer.php" id="contact-form">
                             <h4 class="title">Bize Ulaşın</h4>
-                            <input name="name" id="name" type="text" placeholder="İsim Soyisim">
-                            <input type="email" name="email" id="email" placeholder="email@gmail.com">
-                            <textarea name="message" id="message" placeholder="Mesaj"></textarea>
+
+                            <input name="contact_name" id="contact_name" type="text" placeholder="Firma Yetkilisinin Adı Soyadı" required>
+                            <input name="company_name" id="company_name" type="text" placeholder="Firma Adı" required>
+                            <input name="phone" id="phone" type="tel" placeholder="Firma Telefon Numarası" required>
+                            <input type="email" name="email" id="email" placeholder="E-Posta" required>
+                            <input name="employee_count" id="employee_count" type="text" placeholder="Çalışan Sayısı - Kişi Sayısı">
+
+                            <div class="service-type">
+                                <p class="service-type__title">Hizmet türü seçiniz</p>
+                                <div class="service-options" role="radiogroup" aria-label="Hizmet türü">
+                                    <label class="service-option">
+                                        <input type="radio" name="service_type" value="Taşıma Yemek" checked>
+                                        <span>Taşıma Yemek</span>
+                                    </label>
+                                    <label class="service-option">
+                                        <input type="radio" name="service_type" value="Paket Yemek">
+                                        <span>Paket Yemek</span>
+                                    </label>
+                                    <label class="service-option">
+                                        <input type="radio" name="service_type" value="Yerinde Üretim">
+                                        <span>Yerinde Üretim</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <textarea name="message" id="message" placeholder="YEMEK HİZMETİ TALEBİNİZ KAPSAMINDA&#10;-KAÇ ÇEŞİT YEMEK TALEP EDİYORSUNUZ?&#10;- ELEMAN VE EKİPMAN İHTİYACINIZ VAR MI ?" required></textarea>
 
                             <div id="form-messages"></div>
-                            <button class="rts-btn btn-primary" type="submit">Bize Ulaşın</button>
+                            <button class="rts-btn btn-primary" type="submit">Mesaj Gönder</button>
                         </form>
                     </div>
                 </div>
@@ -176,7 +188,6 @@
         </div>
     </div>
     <!-- map area end -->
-
     <div class="rts-brand-area rts-section-gap">
         <div class="container">
             <div class="row">
@@ -184,21 +195,25 @@
                     <div class="brand-list-area-wrapper">
                         <div class="left-paragraph">
                             <p>Referanslarımız</p>
-                        </div><div class="right-brand-area-wrapper">
+                        </div>
+                        <div class="right-brand-area-wrapper">
                             <div class="single-image">
-                                <img src="assets/images/client/mec-logo.png" alt="brand">
+                                <img src="assets/images/client/mec-logo.png" alt="MEÇ Üniversitesi Meslek Yüksekokulu">
                             </div>
                             <div class="single-image">
-                                <img src="assets/images/client/gymboree-logo.png" alt="brand">
+                                <img src="assets/images/client/gymboree-logo.png" alt="Gymboree Play & Music">
                             </div>
                             <div class="single-image">
-                                <img src="assets/images/client/minikaryum-logo.png" alt="brand">
+                                <img src="assets/images/client/minikaryum-logo.png" alt="Minikaryum Anaokulu">
                             </div>
                             <div class="single-image">
-                                <img src="assets/images/client/birsan-logo.png" alt="brand">
+                                <img src="assets/images/client/birsan-logo.png" alt="Birsan">
                             </div>
                             <div class="single-image">
-                                <img src="assets/images/client/ten-lingerie-logo.png" alt="brand">
+                                <img src="assets/images/client/ten-lingerie-logo.png" alt="Ten Lingerie">
+                            </div>
+                            <div class="single-image">
+                                <img src="assets/images/client/9aksu-logo.png" alt="9AKSU">
                             </div>
                         </div>
                     </div>
@@ -209,9 +224,9 @@
     <!-- rts brand area end -->
 
     <!-- rts footer two area wrapper -->
-
 <div class="rts-footer-area footer-two mt-dec-footer-map bg-footer-two bg_image">
     <div class="container bg-shape-f1">
+        <!-- rts footer area -->
         <!-- rts footer area -->
         <div class="row pt--120 pt_sm--80 pb--80 pb_sm--40" style="justify-content: space-between;">
 
@@ -279,6 +294,7 @@
             <!-- footer end area post end-->
         </div>
         <!-- rts footer area End -->
+        <!-- rts footer area End -->
     </div>
     <!-- copyright area start -->
     <div class="rts-copyright-area">
@@ -286,7 +302,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="text-center">
-                        <p>Invena - Telif Hakkı
+                        <p>MGY Marmara Gıda - Telif Hakkı
                             <script>
                                 document.write(
                                     new Date().getFullYear()
@@ -344,8 +360,9 @@
                     </div>
                     <!-- single ENd -->
                 </div>
-                
                 <div class="social-wrapper-two menu">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-whatsapp"></i></a>
                 </div>
@@ -367,9 +384,6 @@
                 </li>
                 <li class="main-nav project-a-after">
                     <a class="main" href="index.html#blog">Blog</a>
-                </li>
-                <li class="main-nav project-a-after">
-                    <a class="main" href="contact.html">Bize Ulaşın</a>
                 </li>
             </ul>
         </nav>

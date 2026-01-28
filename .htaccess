@@ -1,0 +1,16 @@
+# POST metoduna izin ver
+<Limit GET POST>
+    Require all granted
+</Limit>
+
+# PHP dosyaları için
+<Files "mailer.php">
+    Require all granted
+</Files>
+
+# CORS headers ekle (gerekirse)
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
